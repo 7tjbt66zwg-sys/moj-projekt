@@ -1,46 +1,230 @@
 <!DOCTYPE html>
-<html lang="hr">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Moj projekt</title>
+    <title>BD Ads | Creative Performance Marketing</title>
+    <meta
+      name="description"
+      content="BD Ads helps brands grow with creative strategy, paid social execution, and landing pages built to convert."
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main class="page">
-      <section class="hero">
-        <p class="eyebrow">Brzi pocetak</p>
-        <h1>Mali web projekt spreman za daljnji razvoj</h1>
-        <p class="intro">
-          Ovo je jednostavna pocetna stranica koju mozes dalje siriti u portfolio,
-          landing page ili mini aplikaciju.
-        </p>
+    <div class="shell">
+      <header class="topbar">
+        <a class="brand" href="#home">
+          <span class="brand-mark">BD</span>
+          <span class="brand-text">Ads</span>
+        </a>
 
-        <div class="actions">
-          <button id="cta-button" type="button">Klikni me</button>
-          <a href="#features" class="secondary-link">Pogledaj sto sadrzi</a>
-        </div>
+        <nav class="nav">
+          <a href="#services">Services</a>
+          <a href="#results">Results</a>
+          <a href="#process">Process</a>
+          <a href="#faq">FAQ</a>
+        </nav>
 
-        <p id="message" class="message" aria-live="polite">
-          Status: projekt je uspjesno povezan s GitHubom.
-        </p>
-      </section>
+        <a class="nav-cta" href="#contact">Book a call</a>
+      </header>
 
-      <section id="features" class="features">
-        <article class="card">
-          <h2>HTML</h2>
-          <p>Osnovna struktura stranice s jasnim sekcijama.</p>
-        </article>
-        <article class="card">
-          <h2>CSS</h2>
-          <p>Moderniji izgled s responzivnim rasporedom i bojama.</p>
-        </article>
-        <article class="card">
-          <h2>JavaScript</h2>
-          <p>Jednostavna interakcija za prvi korak u dinamici stranice.</p>
-        </article>
-      </section>
-    </main>
+      <main id="home">
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow">Performance creative for brands that want scale</p>
+            <h1>Ads that look sharp, sell hard, and waste less budget.</h1>
+            <p class="intro">
+              BD Ads blends creative direction, paid media thinking, and landing-page
+              strategy into one clear growth system for modern brands.
+            </p>
+
+            <div class="hero-actions">
+              <a class="primary-button" href="#contact">Start your next campaign</a>
+              <a class="secondary-link" href="#results">See what we optimize</a>
+            </div>
+
+            <div class="proof-strip">
+              <span>Meta ads</span>
+              <span>Creative testing</span>
+              <span>Landing pages</span>
+              <span>Conversion focus</span>
+            </div>
+          </div>
+
+          <aside class="hero-panel">
+            <div class="panel-card pulse-card">
+              <p class="panel-label">Live campaign pulse</p>
+              <div class="metric-row">
+                <div>
+                  <span class="metric-value">4.8x</span>
+                  <span class="metric-note">blended ROAS target</span>
+                </div>
+                <div class="trend-pill">+28% CTR</div>
+              </div>
+              <p id="message" class="panel-message">
+                Creative angle switched from generic product claims to direct problem-solution hooks.
+              </p>
+            </div>
+
+            <div class="panel-grid">
+              <article class="mini-card">
+                <span class="mini-title">Testing</span>
+                <strong>12 hooks / week</strong>
+              </article>
+              <article class="mini-card">
+                <span class="mini-title">Reporting</span>
+                <strong>Fast, simple, useful</strong>
+              </article>
+              <article class="mini-card">
+                <span class="mini-title">Creative</span>
+                <strong>Built for scroll-stop</strong>
+              </article>
+              <article class="mini-card accent-card">
+                <span class="mini-title">Focus</span>
+                <strong>Revenue over vanity metrics</strong>
+              </article>
+            </div>
+          </aside>
+        </section>
+
+        <section class="stats-band" aria-label="Key metrics">
+          <article>
+            <strong>50+</strong>
+            <span>creative concepts shaped for paid campaigns</span>
+          </article>
+          <article>
+            <strong>3-part</strong>
+            <span>system: hook, offer, landing page alignment</span>
+          </article>
+          <article>
+            <strong>Weekly</strong>
+            <span>testing rhythm to cut dead ads faster</span>
+          </article>
+        </section>
+
+        <section id="services" class="section">
+          <div class="section-heading">
+            <p class="eyebrow">Services</p>
+            <h2>Built for brands that need more than just "running ads."</h2>
+          </div>
+
+          <div class="service-grid">
+            <article class="service-card">
+              <h3>Creative strategy</h3>
+              <p>
+                We shape angles, messaging, hooks, and visual direction so each campaign
+                starts with a stronger reason to convert.
+              </p>
+            </article>
+            <article class="service-card">
+              <h3>Paid social execution</h3>
+              <p>
+                Clean campaign structure, smarter budget focus, and faster learning loops
+                for Meta-centered acquisition.
+              </p>
+            </article>
+            <article class="service-card">
+              <h3>Landing page refinement</h3>
+              <p>
+                Stronger offer hierarchy, clearer trust, and lower-friction pages that
+                match the ad click with the sale.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section id="results" class="section results-section">
+          <div class="section-heading split-heading">
+            <div>
+              <p class="eyebrow">Results mindset</p>
+              <h2>We focus on the moments where money is won or lost.</h2>
+            </div>
+            <p class="section-copy">
+              Better hooks. Better click quality. Better landing-page clarity. That is
+              usually where underperforming campaigns turn around.
+            </p>
+          </div>
+
+          <div class="results-layout">
+            <article class="results-card dark-card">
+              <p class="card-kicker">What gets improved</p>
+              <ul class="results-list">
+                <li>Creative fatigue detection before spend drifts.</li>
+                <li>Offer positioning that makes the click feel worth it.</li>
+                <li>Cleaner headline and CTA hierarchy on-page.</li>
+                <li>Sharper testing decisions instead of random tweaks.</li>
+              </ul>
+            </article>
+
+            <article class="results-card quote-card">
+              <p class="card-kicker">How it should feel</p>
+              <blockquote>
+                "The ads, the page, and the offer finally look like they belong to the
+                same system."
+              </blockquote>
+              <button id="cta-button" class="ghost-button" type="button">
+                Show another improvement angle
+              </button>
+            </article>
+          </div>
+        </section>
+
+        <section id="process" class="section">
+          <div class="section-heading">
+            <p class="eyebrow">Process</p>
+            <h2>A simple operating rhythm that keeps campaigns moving.</h2>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline-step">
+              <span class="step-number">01</span>
+              <h3>Audit the funnel</h3>
+              <p>We inspect the offer, the ad story, and the landing-page experience together.</p>
+            </article>
+            <article class="timeline-step">
+              <span class="step-number">02</span>
+              <h3>Build stronger creative angles</h3>
+              <p>We prioritize hooks and concepts based on conversion intent, not guesswork.</p>
+            </article>
+            <article class="timeline-step">
+              <span class="step-number">03</span>
+              <h3>Test, learn, tighten</h3>
+              <p>We cut weak variants faster and keep doubling down on what actually moves revenue.</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="faq" class="section faq-section">
+          <div class="section-heading">
+            <p class="eyebrow">FAQ</p>
+            <h2>Short answers for the usual founder questions.</h2>
+          </div>
+
+          <div class="faq-grid">
+            <article class="faq-card">
+              <h3>Do you only help with ads?</h3>
+              <p>No. We also care about the message, offer framing, and landing-page conversion path.</p>
+            </article>
+            <article class="faq-card">
+              <h3>Can this work for smaller brands?</h3>
+              <p>Yes, especially when budget discipline and sharp positioning matter even more.</p>
+            </article>
+            <article class="faq-card">
+              <h3>What makes the difference fastest?</h3>
+              <p>Usually better creative angles and clearer on-page offer communication.</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="contact" class="contact-banner">
+          <div>
+            <p class="eyebrow">Ready when you are</p>
+            <h2>Make the site and ads feel like one conversion machine.</h2>
+          </div>
+          <a class="primary-button" href="mailto:hello@bdads.example">hello@bdads.example</a>
+        </section>
+      </main>
+    </div>
 
     <script src="script.js"></script>
   </body>
