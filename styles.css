@@ -1,0 +1,139 @@
+:root {
+  color-scheme: light;
+  --bg: #f7f1e3;
+  --surface: #fffaf0;
+  --text: #1f2937;
+  --muted: #5b6472;
+  --accent: #0f766e;
+  --accent-dark: #115e59;
+  --border: #d9cdb4;
+  --shadow: 0 18px 45px rgba(31, 41, 55, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Avenir Next", "Segoe UI", sans-serif;
+  background:
+    radial-gradient(circle at top, rgba(15, 118, 110, 0.18), transparent 30%),
+    linear-gradient(180deg, #f7f1e3 0%, #efe4cf 100%);
+  color: var(--text);
+}
+
+.page {
+  min-height: 100vh;
+  padding: 48px 20px;
+  display: grid;
+  place-items: center;
+}
+
+.hero {
+  width: min(960px, 100%);
+  background: rgba(255, 250, 240, 0.92);
+  border: 1px solid var(--border);
+  border-radius: 28px;
+  padding: 40px;
+  box-shadow: var(--shadow);
+}
+
+.eyebrow {
+  margin: 0 0 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.8rem;
+  color: var(--accent-dark);
+}
+
+h1 {
+  margin: 0;
+  max-width: 12ch;
+  font-size: clamp(2.4rem, 7vw, 5rem);
+  line-height: 0.95;
+}
+
+.intro {
+  margin: 20px 0 0;
+  max-width: 58ch;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--muted);
+}
+
+.actions {
+  margin-top: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-items: center;
+}
+
+button,
+.secondary-link {
+  border-radius: 999px;
+  padding: 14px 20px;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background: var(--accent);
+  color: white;
+  cursor: pointer;
+  transition: transform 160ms ease, background 160ms ease;
+}
+
+button:hover {
+  background: var(--accent-dark);
+  transform: translateY(-1px);
+}
+
+.secondary-link {
+  border: 1px solid var(--border);
+  color: var(--text);
+  background: white;
+}
+
+.message {
+  margin-top: 18px;
+  font-weight: 600;
+  color: var(--accent-dark);
+}
+
+.features {
+  margin-top: 34px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.card {
+  padding: 22px;
+  border-radius: 22px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+}
+
+.card h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+@media (max-width: 720px) {
+  .hero {
+    padding: 28px;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+}
